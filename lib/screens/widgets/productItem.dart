@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ComponatboxWedgit extends StatelessWidget {
+class ProductItem extends StatelessWidget {
   var image;
   String name;
   String weight;
   String price;
-  ComponatboxWedgit(this.image,this.name,this.price,this.weight,{super.key});
+ ProductItem(this.image,this.name,this.price,this.weight,{super.key});
  
 
   @override
@@ -13,6 +13,7 @@ class ComponatboxWedgit extends StatelessWidget {
     return
                 Container(
                   padding: EdgeInsets.only(top:25,right: 15, left: 15,bottom: 15),
+                  //height: 119,
                 width: 173.32,
                 
                 decoration:BoxDecoration(
@@ -23,7 +24,8 @@ class ComponatboxWedgit extends StatelessWidget {
                  child:Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                     children:[
-                      Center(child: Image.asset(image)),
+                      Center(child: Image.asset(image,height: 62,)),
+                      SizedBox(height: 32),
                       Text(name,style: 
                       TextStyle(
                         fontSize: 16,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/screens/shopText_wedgit.dart';
-import 'package:flutter_application_2/screens/widgets/componatBox_wedgit.dart';
+import 'package:flutter_application_2/screens/widgets/groceriesItems.dart';
+import 'package:flutter_application_2/screens/widgets/shopText_wedgit.dart';
+import 'package:flutter_application_2/screens/widgets/productItem.dart';
 import 'package:flutter_application_2/screens/widgets/searchBar_widget.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_application_2/screens/widgets/slider_wedgit.dart';
@@ -44,76 +45,105 @@ class ShopScreen extends StatelessWidget {
             SizedBox(height: 30),
             ShoptextWedgit("Exclusive Offer"),
             SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            
 
-              children: [
-                ComponatboxWedgit(
-                  "assets/images/Bunch-Bananas-1.jpg",
-                  "Organic Bananas",
-                  r"$4.99",
-                  "7pices, priceg",
+             
+                SizedBox(
+                  height:280,
+                  child: ListView.separated(itemBuilder: (context,index){
+                    if(index%2==0){
+                    return ProductItem(
+                      "assets/images/Bunch-Bananas-1.jpg",
+                      "Organic Bananas",
+                      r"$4.99",
+                      "7pices, priceg",
+                    );
+                    }else{
+                 return ProductItem(
+                    "assets/images/apple.webp",
+                    "Red Apple",
+                    r"$4.99",
+                    "1kg, Priceg",
+                  );
+                    }
+                    },
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 10,
+                    separatorBuilder: (context, index) => SizedBox(width: 10,),
+                    
+                              ),
+
                 ),
-                ComponatboxWedgit(
-                  "assets/images/apple.webp",
-                  "Red Apple",
-                  r"$4.99",
-                  "1kg, Priceg",
-                ),
-              ],
-            ),
             SizedBox(height: 30),
             ShoptextWedgit("Best selling"),
             SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                ComponatboxWedgit(
+            SizedBox(
+                  height:280,
+                  child: ListView.separated(itemBuilder: (context,index){
+                    if(index%2==0){
+                    return ProductItem(
                   "assets/images/Bell_pepper.jpg",
                   "Bell pepper",
                   r"$5.99",
                   "7pices, priceg",
-                ),
-                ComponatboxWedgit(
+                );
+                    }
+                return ProductItem(
                   "assets/images/ginger-5108742_640.jpg",
                   "Ginger",
                   r"$4.99",
                   "250gm, Priceg",
+                );
+                    },
+                    
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 10,
+                    separatorBuilder: (context, index) => SizedBox(width: 10,),
+                    
+                              ),
+
                 ),
-              ],
-            ),
+            
             SizedBox(height: 30),
             ShoptextWedgit("Groceries"),
             SizedBox(height: 20),
-            Container(
-              decoration: BoxDecoration(
-                color: Color(0xffF8A44C),
-                borderRadius: BorderRadius.circular(20),
+            SizedBox(
+             
+              height:100,
+              child: ListView.separated(itemBuilder: (context, index){
+                if(index%2==0){
+                return GroceriesItems("assets/images/pluses.png", "Pulses",0xffF8A44C);
+              } 
+              return GroceriesItems("assets/images/rice.png", "Rice corp",0xff53B175);
+                
+              } ,
+              separatorBuilder: (context, index) => SizedBox(width: 10),
+              itemCount: 10,
+              scrollDirection: Axis.horizontal,
+              
               ),
-              child: Row(
-                children: [
-                  Image.asset("assets/images/pluses.png"),
-                  Text("Pulses",style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight(600),
-
-                  ),
-                  )
-                ],
-              ),
-
             ),
+
+            
             SizedBox(
               height: 20,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                ComponatboxWedgit("assets/images/meat.png", "beaf Done", r"$4.99", "1kg,priceg"),
-                ComponatboxWedgit("assets/images/chicken.png", "Broiler Chicken", r"$4.99", "1kg,priceg"),
-              ],
-            ),
+            SizedBox(
+                  height:280,
+                  child: ListView.separated(itemBuilder: (context,index){
+                    if(index%2==0){
+                    return ProductItem("assets/images/meat.png", "beaf Done", r"$4.99", "1kg,priceg");
+                    }
+                return ProductItem("assets/images/chicken.png", "Broiler Chicken", r"$4.99", "1kg,priceg");
+                    },
+                    
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 10,
+                    separatorBuilder: (context, index) => SizedBox(width: 10,),
+                    
+                              ),
 
+                ),
           ],
         ),
       ),

@@ -15,11 +15,11 @@ class ButtomNavBarScreen extends StatefulWidget {
 class _ButtomNavBarScreenState extends State<ButtomNavBarScreen> {
   int currentIndex=0;
   List<Widget>screens=[
-    ShopScreen(),
-    ExploreScreen(),
-    ShoppingCartScreen(),
-    FavouriteScreen(),
-    AccountScreen()
+    const ShopScreen(),
+    const ExploreScreen(),
+    const ShoppingCartScreen(),
+    const FavouriteScreen(),
+    const AccountScreen()
   ];
 
   @override

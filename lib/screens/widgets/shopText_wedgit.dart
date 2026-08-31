@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/models/shopText_model.dart';
 
 class ShoptextWedgit extends StatelessWidget {
-  String title;
-   ShoptextWedgit(this.title,{super.key});
+  final ShoptextModel shopTitle;
+   const ShoptextWedgit({required this.shopTitle,super.key});
 
   @override
   Widget build(BuildContext context) {
     return  Row(
           children: [
-            Text(title,style: 
-            TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight(600)
-            )
+            Expanded(
+              child: Text(shopTitle.title,style: 
+              TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight(600)
+              )
+              ),
             ),
-            SizedBox(
-              width: 153,
-            ),
+            
             Text("See all ",style: 
             TextStyle(
               color: Colors.green,

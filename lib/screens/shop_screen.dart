@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/models/groceries_model.dart';
+import 'package:flutter_application_2/models/product_model.dart';
+import 'package:flutter_application_2/models/shopText_model.dart';
 import 'package:flutter_application_2/screens/widgets/groceriesItems.dart';
 import 'package:flutter_application_2/screens/widgets/shopText_wedgit.dart';
 import 'package:flutter_application_2/screens/widgets/productItem.dart';
@@ -40,10 +43,12 @@ class ShopScreen extends StatelessWidget {
               ],
             ),
             SizedBox(height: 20),
-            SearchWidget(),
-            SliderWedgit(),
+            const SearchWidget(),
+            const SliderWedgit(),
             SizedBox(height: 30),
-            ShoptextWedgit("Exclusive Offer"),
+             ShoptextWedgit(shopTitle:ShoptextModel(title: "Exclusive Offer")
+             
+             ),
             SizedBox(height: 20),
             
 
@@ -51,21 +56,11 @@ class ShopScreen extends StatelessWidget {
                 SizedBox(
                   height:280,
                   child: ListView.separated(itemBuilder: (context,index){
-                    if(index%2==0){
-                    return ProductItem(
-                      "assets/images/Bunch-Bananas-1.jpg",
-                      "Organic Bananas",
-                      r"$4.99",
-                      "7pices, priceg",
-                    );
-                    }else{
+                    
                  return ProductItem(
-                    "assets/images/apple.webp",
-                    "Red Apple",
-                    r"$4.99",
-                    "1kg, Priceg",
+                    product: exclusiveOffer[index % exclusiveOffer.length],
                   );
-                    }
+                    
                     },
                     scrollDirection: Axis.horizontal,
                     itemCount: 10,
@@ -75,24 +70,16 @@ class ShopScreen extends StatelessWidget {
 
                 ),
             SizedBox(height: 30),
-            ShoptextWedgit("Best selling"),
+            ShoptextWedgit(shopTitle:ShoptextModel(title: "Best salling")
+             
+             ),
             SizedBox(height: 20),
             SizedBox(
                   height:280,
                   child: ListView.separated(itemBuilder: (context,index){
-                    if(index%2==0){
-                    return ProductItem(
-                  "assets/images/Bell_pepper.jpg",
-                  "Bell pepper",
-                  r"$5.99",
-                  "7pices, priceg",
-                );
-                    }
+                  
                 return ProductItem(
-                  "assets/images/ginger-5108742_640.jpg",
-                  "Ginger",
-                  r"$4.99",
-                  "250gm, Priceg",
+                    product: bestSailing[index %bestSailing.length],
                 );
                     },
                     
@@ -105,16 +92,16 @@ class ShopScreen extends StatelessWidget {
                 ),
             
             SizedBox(height: 30),
-            ShoptextWedgit("Groceries"),
+             ShoptextWedgit(shopTitle:ShoptextModel(title: "Grocieries")
+             
+             ),
             SizedBox(height: 20),
             SizedBox(
              
               height:100,
               child: ListView.separated(itemBuilder: (context, index){
-                if(index%2==0){
-                return GroceriesItems("assets/images/pluses.png", "Pulses",0xffF8A44C);
-              } 
-              return GroceriesItems("assets/images/rice.png", "Rice corp",0xff53B175);
+                
+              return GroceriesItems(groceries: groceriesitems[index%groceriesitems.length]);
                 
               } ,
               separatorBuilder: (context, index) => SizedBox(width: 10),
@@ -131,10 +118,9 @@ class ShopScreen extends StatelessWidget {
             SizedBox(
                   height:280,
                   child: ListView.separated(itemBuilder: (context,index){
-                    if(index%2==0){
-                    return ProductItem("assets/images/meat.png", "beaf Done", r"$4.99", "1kg,priceg");
-                    }
-                return ProductItem("assets/images/chicken.png", "Broiler Chicken", r"$4.99", "1kg,priceg");
+                   
+                    return ProductItem( product: other[index % other.length],);
+                  
                     },
                     
                     scrollDirection: Axis.horizontal,
@@ -150,3 +136,36 @@ class ShopScreen extends StatelessWidget {
     );
   }
 }
+
+List<ProductItemModel>products=[
+  ProductItemModel(image:"assets/images/Bunch-Bananas-1.jpg",name: "Organic Bananas",weight:"7pices, priceg", price: r"$4.99"),
+  ProductItemModel(image:"assets/images/apple.webp",name: "Red Apple",weight:"1kg, Priceg", price:r"$4.99"),
+  ProductItemModel(image:"assets/images/Bell_pepper.jpg",name: "Bell pepper",weight:"7pices, priceg", price: r"$5.99"),
+  ProductItemModel(image: "assets/images/ginger-5108742_640.jpg",name:"Ginger",weight: "250gm, Priceg", price: r"$4.99"),
+  ProductItemModel(image: "assets/images/meat.png",name:"beaf Done",weight: "1kg,priceg", price: r"$4.99"),
+  ProductItemModel(image: "assets/images/chicken.png",name:"Broiler Chicken",weight: "1kg,priceg", price: r"$4.99"),
+];
+List<ProductItemModel> exclusiveOffer = [
+  products[0],
+  products[1],
+];
+List<ProductItemModel> bestSailing = [
+  products[2],
+  products[3],
+];
+List<ProductItemModel> other= [
+  products[4],
+  products[5],
+];
+List<GroceriesModel> groceriesitems = [
+  GroceriesModel(
+    image: "assets/images/pluses.png",
+    name: "Pulses",
+    color: 0xffF8A44C,
+  ),
+  GroceriesModel(
+    image: "assets/images/rice.png",
+    name: "Rice corp",
+    color: 0xff53B175,
+  ),
+];

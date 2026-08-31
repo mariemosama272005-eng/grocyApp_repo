@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/models/product_model.dart';
 
 class ProductItem extends StatelessWidget {
-  var image;
-  String name;
-  String weight;
-  String price;
- ProductItem(this.image,this.name,this.price,this.weight,{super.key});
+ final ProductItemModel product;
+  const ProductItem({required this.product,super.key});
  
 
   @override
@@ -24,16 +22,16 @@ class ProductItem extends StatelessWidget {
                  child:Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                     children:[
-                      Center(child: Image.asset(image,height: 62,)),
+                      Center(child: Expanded(child:  Image.asset(product.image,height: 62,))),
                       SizedBox(height: 32),
-                      Text(name,style: 
+                      Text(product.name,style: 
                       TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight(400),
                       ),
                       ),
                       
-                      Text(weight,style: 
+                      Text(product.weight,style: 
                       TextStyle(
                         fontWeight:FontWeight(400),
                         color: Color(0xff7C7C7C),
@@ -46,7 +44,7 @@ class ProductItem extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(price,style:
+                          Text(product.price,style:
                           TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight(600),

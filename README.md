@@ -1,3 +1,4 @@
+
 # Login
 <img width="2625" height="1789" alt="Screenshot 2026-08-17 214505" src="https://github.com/user-attachments/assets/f8670bab-b0ef-478e-b7c0-cdafb66fd09f" />
 #signUp
@@ -9,9 +10,11 @@
 <img width="1842" height="1635" alt="Screenshot 2026-08-24 201842" src="https://github.com/user-attachments/assets/6cb71a24-b694-482f-83f4-cb5b16c2caa5" />
 <img width="1917" height="1235" alt="Screenshot 2026-08-24 201851" src="https://github.com/user-attachments/assets/b00aed51-d014-4c1f-bc2c-6333e9025da3" />
 #scrollable screen 
-
-
 https://github.com/user-attachments/assets/5d5ad126-daa5-47c1-8070-22d9955d0bfe
+
+#account page
+<img width="1965" height="1807" alt="Screenshot 2026-08-31 225951" src="https://github.com/user-attachments/assets/706df1c8-6e40-4200-82d6-f738213a9840" />
+
 
 
 

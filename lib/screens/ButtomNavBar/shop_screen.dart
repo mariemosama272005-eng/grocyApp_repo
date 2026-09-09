@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_2/models/groceries_model.dart';
 import 'package:flutter_application_2/models/product_model.dart';
 import 'package:flutter_application_2/models/shopText_model.dart';
-import 'package:flutter_application_2/screens/widgets/groceriesItems.dart';
-import 'package:flutter_application_2/screens/widgets/shopText_wedgit.dart';
-import 'package:flutter_application_2/screens/widgets/productItem.dart';
-import 'package:flutter_application_2/screens/widgets/searchBar_widget.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/wedgit/groceriesItems.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/wedgit/shopText_wedgit.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/wedgit/productItem.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/wedgit/searchBar_widget.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter_application_2/screens/widgets/slider_wedgit.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/wedgit/slider_wedgit.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class ShopScreen extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/models/accountOption_model.dart';
-import 'package:flutter_application_2/screens/widgets/accountInfo_wedgit.dart';
-import 'package:flutter_application_2/screens/widgets/accountOption_wedgit.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/wedgit/accountInfo_wedgit.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/wedgit/accountOption_wedgit.dart';
 
 class AccountScreen extends StatelessWidget {
   const AccountScreen({super.key});
@@ -22,41 +22,51 @@ class AccountScreen extends StatelessWidget {
         options: option,
       ),
     ),
-    SizedBox(height: 20,),
-    Container(
-  height: 36,
-  width:100,
-  decoration: BoxDecoration(
-    color: const Color(0xffF2F3F2),
-    borderRadius: BorderRadius.circular(20),
-  ),
-  
-    child: Row(
-      children: [
-       
-    
-        const Icon(
-          Icons.logout_outlined,
-          color: Color(0xff53B175),
-          size: 30,
+    Padding(
+      padding: const EdgeInsets.all(10),
+      child: Container(
+        height: 80,
+
+       width: double.infinity,
+        decoration: BoxDecoration(
+      color: const Color(0xffF2F3F2),
+      borderRadius: BorderRadius.circular(20),
         ),
-    
-    
-        const Text(
-          "Log Out",
-          style: TextStyle(
-            color: Color(0xff53B175),
-            
-            fontWeight: FontWeight.w500,
+        
+      
+        child: Padding(
+          padding: const EdgeInsets.all(25.0),
+          child: Row(
+            children: [
+             
+          
+              const Icon(
+                Icons.logout_outlined,
+                color: Color(0xff53B175),
+                size: 30,
+              ),
+              
+          
+              Center(
+                child: const Text(
+                  "Log Out",
+                  style: TextStyle(
+                    color: Color(0xff53B175),
+                    
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+          
+             
+          
+              
+            ],
           ),
         ),
+      ),
+        ),
     
-       
-    
-        
-      ],
-    ),
-  ),
 
       
   

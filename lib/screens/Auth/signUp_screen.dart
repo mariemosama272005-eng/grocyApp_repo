@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/screens/login_screen.dart';
-import 'package:flutter_application_2/screens/widgets/carrot_wedgit.dart';
-import 'package:flutter_application_2/screens/widgets/logDa_wedgit.dart';
-import 'package:flutter_application_2/screens/widgets/emilPass_wedgit.dart';
-import 'package:flutter_application_2/screens/widgets/logSignButton_wedgit.dart';
+import 'package:flutter_application_2/models/button_model.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/buttom_nav_bar_screen.dart';
+import 'package:flutter_application_2/screens/Auth/login_screen.dart';
+import 'package:flutter_application_2/screens/Auth/widget/carrot_wedgit.dart';
+import 'package:flutter_application_2/screens/Auth/widget/logDa_wedgit.dart';
+import 'package:flutter_application_2/screens/Auth/widget/emilPass_wedgit.dart';
+import 'package:flutter_application_2/screens/Onbording/widget/Button_wedgit.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -131,16 +133,21 @@ class _SignupScreenState extends State<SignupScreen> {
                   SizedBox(height: 30.03),
 
                   // Button
-                  Logsignbutton(
-                    "Sign Up",
-                    () {
-                      if (_formKey.currentState!.validate()) {
-                        print(_usernameController.text);
-                        print(_emailController.text);
-                        print(_passwordController.text);
-                      }
-                    },
-                  ),
+                ButtonWedgit(
+  () {
+    if (_formKey.currentState!.validate()) {
+      print(_usernameController.text);
+      print(_emailController.text);
+      print(_passwordController.text);
+      Navigator.push(context, MaterialPageRoute(
+          builder: (context) => ButtomNavBarScreen(),
+          )
+      );
+
+    }
+  },
+  buttom: ButtonModel("Sign Up"),
+),
 
                   SizedBox(height: 25),
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/screens/account_screen.dart';
-import 'package:flutter_application_2/screens/explore_screen.dart';
-import 'package:flutter_application_2/screens/favourite_screen.dart';
-import 'package:flutter_application_2/screens/shop_screen.dart';
-import 'package:flutter_application_2/screens/shopping_cart_screen.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/account_screen.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/explore_screen.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/favourite_screen.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/shop_screen.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/shopping_cart_screen.dart';
 
 class ButtomNavBarScreen extends StatefulWidget {
   const ButtomNavBarScreen({super.key});

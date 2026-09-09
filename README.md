@@ -16,8 +16,16 @@
 #scrollable screen 
 https://github.com/user-attachments/assets/5d5ad126-daa5-47c1-8070-22d9955d0bfe
 
-#account page
-<img width="1965" height="1807" alt="Screenshot 2026-08-31 225951" src="https://github.com/user-attachments/assets/706df1c8-6e40-4200-82d6-f738213a9840" />
+# account screen
+<img width="1225" height="1565" alt="Screenshot 2026-09-10 024724" src="https://github.com/user-attachments/assets/aba8574a-18a0-4c5d-a951-654fb084e619" />
+<img width="1250" height="405" alt="image" src="https://github.com/user-attachments/assets/fb267d9f-676f-4597-8f37-f8aaceecaac9" />
+
+
+# favourite Screen
+<img width="1200" height="1582" alt="image" src="https://github.com/user-attachments/assets/87092c02-529c-4995-800e-7ef775f0e899" />
+<img width="1192" height="545" alt="image" src="https://github.com/user-attachments/assets/d50e00f5-7ec8-49b6-a671-feb629746273" />
+
+
 
 
 

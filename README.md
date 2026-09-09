@@ -1,8 +1,12 @@
+# OnBarding 
+<img width="1210" height="1730" alt="Screenshot 2026-09-10 023253" src="https://github.com/user-attachments/assets/c61b7e35-557d-4f91-9c5a-78ffd5b27cf2" />
 
 # Login
-<img width="2625" height="1789" alt="Screenshot 2026-08-17 214505" src="https://github.com/user-attachments/assets/f8670bab-b0ef-478e-b7c0-cdafb66fd09f" />
-#signUp
-<img width="2519" height="1776" alt="Screenshot 2026-08-17 214748" src="https://github.com/user-attachments/assets/9c9e2691-d646-40cf-a242-ba137924c8f9" />
+<img width="1212" height="1737" alt="Screenshot 2026-09-10 023458" src="https://github.com/user-attachments/assets/6c9740a9-94b9-4743-b3ce-93e659f26f30" />
+
+# signUp
+<img width="1122" height="1717" alt="Screenshot 2026-09-10 023614" src="https://github.com/user-attachments/assets/2ccae848-f0a5-4d0d-a182-9502956f985b" />
+
 #shop Screen with bottom navbar
 <img width="2533" height="1758" alt="Screenshot 2026-08-20 192229" src="https://github.com/user-attachments/assets/84c547bf-6e37-4643-b4f6-bbf7bfbbf05c" />
 #shopScreen with products

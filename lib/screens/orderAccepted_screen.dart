@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/models/button_model.dart';
 import 'package:flutter_application_2/models/normalButton_model.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/buttom_nav_bar_screen.dart';
+import 'package:flutter_application_2/screens/ButtomNavBar/shop_screen.dart';
 
 import 'package:flutter_application_2/screens/Onbording/widget/Button_wedgit.dart';
 import 'package:flutter_application_2/screens/widgets/normalButton_wedgit.dart';
@@ -40,16 +42,33 @@ class OrderAcceptedScreen extends StatelessWidget {
             ),
             ),
             SizedBox(
-              height: 60,
+              height: 40,
             ),
             NormalButtonWedgit(button: NormalbuttonModel("Track Order")),
-            
-              Text("Back To Home",style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 18,
+              SizedBox(
+                height:20,
+              ),
 
-              ),
-              ),
+             
+            
+            GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ButtomNavBarScreen()),
+                      );
+                    },
+                  
+
+                    child: Text(
+                      "Back to Home",
+                      style: TextStyle(
+                        fontWeight: FontWeight(600),
+                       
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
               SizedBox(
                 height:20,
               )

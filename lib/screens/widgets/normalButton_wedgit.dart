@@ -7,22 +7,26 @@ class NormalButtonWedgit extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
-            decoration: BoxDecoration(
-              color: Color(0xff53B175),
-              borderRadius: BorderRadius.circular(19),
-            ),
-            padding: EdgeInsets.symmetric(vertical: 25),
-            child: Center(
-              child: Text(
-                button.title,
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight(600),
-                  color: Color(0xffFFF9FF),
-                ),
+    return  Padding(
+        padding: const EdgeInsets.all(10),
+        child: Container(
+          decoration: BoxDecoration(
+            color: Color(0xff53B175),
+            borderRadius: BorderRadius.circular(20),
+          ),
+          padding: EdgeInsets.symmetric(vertical: 25),
+          child: Center(
+            child: Text(
+              button.title,
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight(600),
+                color: Color(0xffFFF9FF),
               ),
             ),
-                  );
+          ),
+        ),
+    
+        );
   }
 }

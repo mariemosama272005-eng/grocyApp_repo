@@ -9,72 +9,56 @@ class AccountScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child:Column(
-  children: [
-    const AccountInfo(),
-
-    const SizedBox(height: 15),
-
-    const Divider(),
-
-    ...accountOptions.map(
-      (option) => AccountOption(
-        options: option,
-      ),
-    ),
-    Padding(
-      padding: const EdgeInsets.all(10),
-      child: Container(
-        height: 80,
-
-       width: double.infinity,
-        decoration: BoxDecoration(
-      color: const Color(0xffF2F3F2),
-      borderRadius: BorderRadius.circular(20),
-        ),
-        
-      
-        child: Padding(
-          padding: const EdgeInsets.all(25.0),
-          child: Row(
-            children: [
-             
-          
-              const Icon(
-                Icons.logout_outlined,
-                color: Color(0xff53B175),
-                size: 30,
+     
+      padding: const EdgeInsets.only(bottom: 120),
+      child: Column(
+        children: [
+          const AccountInfo(),
+          const SizedBox(height: 15),
+          const Divider(),
+          ...accountOptions.map(
+            (option) => AccountOption(
+              options: option,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10),
+            child: Container(
+              height: 80,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: const Color(0xffF2F3F2),
+                borderRadius: BorderRadius.circular(20),
               ),
-              
-          
-              Center(
-                child: const Text(
-                  "Log Out",
-                  style: TextStyle(
-                    color: Color(0xff53B175),
-                    
-                    fontWeight: FontWeight.w500,
-                  ),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Row(
+                  children: [
+                    const Icon(
+                      Icons.logout_outlined,
+                      color: Color(0xff53B175),
+                      size: 30,
+                    ),
+                    const SizedBox(width: 20), 
+                    const Text(
+                      "Log Out",
+                      style: TextStyle(
+                        color: Color(0xff53B175),
+                        fontWeight: FontWeight.w500,
+                        fontSize: 18,
+                      ),
+                    ),
+                  ],
                 ),
               ),
-          
-             
-          
-              
-            ],
+            ),
           ),
-        ),
+        ],
       ),
-        ),
-    
-
-      
-  
-  ],
-  ),
-);
+    );
   }
 }
+
 final List<AccountoptionModel> accountOptions = [
   AccountoptionModel(
     icon: Icons.shopping_bag_outlined,

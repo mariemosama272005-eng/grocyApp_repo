@@ -12,28 +12,31 @@ class ShoppingCartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: SafeArea(
-        child: Column(
-          children: [
-            Center(child:Text("My Cart",style: TextStyle(
-                fontSize: 20,
-        
-              ),
-              ),
-              ),
-              SizedBox(
-                height: 31,
-              ),
-              Divider(),
-              CartoptionsWidget(product: FavproductModel(image: "assets/images/Bell_pepper.jpg", name:"Bell Pepper Red", discription: "1kg, Price", price:r"$4.99")),
-              CartoptionsWidget(product: FavproductModel(image: "assets/images/egg.png", name:"Egg Chicken Red", discription: "4pcs, Price", price:r"$1.99")),
-              CartoptionsWidget(product: FavproductModel(image: "assets/images/Bunch-Bananas-1.jpg", name:"Organic Bananas", discription: "12kg, Price", price:r"$3.00")),
-              CartoptionsWidget(product: FavproductModel(image: "assets/images/ginger-5108742_640.jpg", name:"Ginger", discription: "250gm, Price", price:r"$2.99")),
-              ButtonWedgit((){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>CheckoutScreen()));
-              }, buttom: ButtonModel("CheckOut")),
-              
-          ],
-        
+        child: Padding(
+          padding: const EdgeInsets.all(25),
+          child: Column(
+            children: [
+              Center(child:Text("My Cart",style: TextStyle(
+                  fontSize: 20,
+          
+                ),
+                ),
+                ),
+                SizedBox(
+                  height: 31,
+                ),
+                Divider(),
+                CartoptionsWidget(product: FavproductModel(image: "assets/images/Bell_pepper.jpg", name:"Bell Pepper Red", discription: "1kg, Price", price:r"$4.99")),
+                CartoptionsWidget(product: FavproductModel(image: "assets/images/egg.png", name:"Egg Chicken Red", discription: "4pcs, Price", price:r"$1.99")),
+                CartoptionsWidget(product: FavproductModel(image: "assets/images/Bunch-Bananas-1.jpg", name:"Organic Bananas", discription: "12kg, Price", price:r"$3.00")),
+                CartoptionsWidget(product: FavproductModel(image: "assets/images/ginger-5108742_640.jpg", name:"Ginger", discription: "250gm, Price", price:r"$2.99")),
+                ButtonWedgit((){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>CheckoutScreen()));
+                }, buttom: ButtonModel("CheckOut")),
+                
+            ],
+          
+          ),
         ),
       ),
     );

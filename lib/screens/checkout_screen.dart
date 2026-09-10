@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/models/button_model.dart';
 import 'package:flutter_application_2/models/normalButton_model.dart';
 import 'package:flutter_application_2/models/payment_model.dart';
+import 'package:flutter_application_2/screens/Onbording/widget/Button_wedgit.dart';
+import 'package:flutter_application_2/screens/orderAccepted_screen.dart';
 import 'package:flutter_application_2/screens/widgets/normalButton_wedgit.dart';
 import 'package:flutter_application_2/screens/widgets/payment_wedgit.dart';
 
@@ -59,7 +62,12 @@ class CheckoutScreen extends StatelessWidget {
           SizedBox(
             height: 30,
           ),
-          NormalButtonWedgit(button: NormalbuttonModel("Place Order")),
+          ButtonWedgit(
+            (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>OrderAcceptedScreen()));
+
+            },
+            buttom: ButtonModel("Place Order")),
           SizedBox(
             height: 20,
           ),

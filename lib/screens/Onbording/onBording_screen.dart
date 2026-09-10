@@ -26,7 +26,7 @@ class OnbordingScreen extends StatelessWidget {
         ),
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.only(bottom: 90),
+            padding: const EdgeInsets.only(bottom: 70),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
                 
@@ -57,7 +57,7 @@ class OnbordingScreen extends StatelessWidget {
                   fontSize: 16,
                 
                 ),),
-                SizedBox(height: 40,),
+                
                 
                ButtonWedgit(
   () {

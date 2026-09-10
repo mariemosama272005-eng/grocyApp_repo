@@ -20,18 +20,15 @@ https://github.com/user-attachments/assets/4e1dc604-8c0e-4dda-a494-b3778cfadf79
 <img width="1215" height="1387" alt="Screenshot 2026-09-10 182244" src="https://github.com/user-attachments/assets/502cb414-41fd-495d-a439-500173cf766b" />
 <img width="1180" height="577" alt="image" src="https://github.com/user-attachments/assets/0bc03434-4ce8-41e8-8817-9e4b5e09d3f0" />
 
-
-
-
 # favourite Screen
 <img width="1200" height="1582" alt="image" src="https://github.com/user-attachments/assets/87092c02-529c-4995-800e-7ef775f0e899" />
 <img width="1192" height="545" alt="image" src="https://github.com/user-attachments/assets/d50e00f5-7ec8-49b6-a671-feb629746273" />
 
-
-
 # account screen
 <img width="1225" height="1565" alt="Screenshot 2026-09-10 024724" src="https://github.com/user-attachments/assets/aba8574a-18a0-4c5d-a951-654fb084e619" />
 <img width="1250" height="405" alt="image" src="https://github.com/user-attachments/assets/fb267d9f-676f-4597-8f37-f8aaceecaac9" />
+# filiter Screeen
+<img width="1220" height="1565" alt="image" src="https://github.com/user-attachments/assets/29095741-007d-4001-96f2-ba293afe115e" />
 
 
 

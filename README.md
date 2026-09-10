@@ -1,3 +1,6 @@
+# Splash Screen
+<img width="1225" height="1535" alt="image" src="https://github.com/user-attachments/assets/bdba79bb-74d1-40e2-8d7d-870afb756274" />
+
 # OnBarding 
 <img width="1210" height="1730" alt="Screenshot 2026-09-10 023253" src="https://github.com/user-attachments/assets/c61b7e35-557d-4f91-9c5a-78ffd5b27cf2" />
 

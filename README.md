@@ -29,6 +29,11 @@ https://github.com/user-attachments/assets/4e1dc604-8c0e-4dda-a494-b3778cfadf79
 <img width="1250" height="405" alt="image" src="https://github.com/user-attachments/assets/fb267d9f-676f-4597-8f37-f8aaceecaac9" />
 # filiter Screeen
 <img width="1220" height="1565" alt="image" src="https://github.com/user-attachments/assets/29095741-007d-4001-96f2-ba293afe115e" />
+# product Ditails Screen
+<img width="1225" height="1820" alt="image" src="https://github.com/user-attachments/assets/a174d4ae-8de2-49b7-9d46-e5500b7e6bfd" />
+<img width="1240" height="432" alt="image" src="https://github.com/user-attachments/assets/6b939685-8de5-418b-985e-728be9b91909" />
+
+
 
 
 
